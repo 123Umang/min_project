@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #11cb3c, #2575fc);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.register-card {
+  background: #981818;
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.register-card h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.register-card p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.register-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #752828;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.register-card input:focus {
+  border-color: #2575fc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+}
+
+.checkbox {
+  font-size: 13px;
+  color: #444;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.register-card button {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  color: #a86060;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.register-card button:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #7897d0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

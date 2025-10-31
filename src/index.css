@@ -1,13 +1,151 @@
-body {
+/* General Reset */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color:  #FFFFFF;; /* light gray */
+  color: #1f2937; /* dark text */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #1e40af; /* blue-900 */
+  color: #942929;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  min-height: 100vh;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar button {
+  background: none;
+  border: none;
+  color: inherit;
+  text-align: left;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 6px 0;
+}
+
+.sidebar button:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar Logout Button */
+.sidebar .logout-btn {
+  margin-top: auto;
+  background-color: #ef4444; /* red-500 */
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.sidebar .logout-btn:hover {
+  background-color: #dc2626; /* red-600 */
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Card */
+.card {
+  background-color: #6c1d1d;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section */
+.profile-card .balance {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Transactions Grid */
+.transactions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+.logo {
+  width: 60px;   /* or whatever size */
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
+@media (min-width: 768px) {
+  .transactions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Transactions List */
+.transactions-list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transactions-list li .credit {
+  color: #16a34a; /* green-600 */
+}
+
+.transactions-list li .debit {
+  color: #dc2626; /* red-600 */
+}
+
+/* Form Inputs */
+form input {
+  padding: 8px;
+  border: 1px solid #298b52;
+  border-radius: 6px;
+  width: 100%;
+}
+
+/* Form Button */
+form .btn {
+  background-color: #2563eb; /* blue-600 */
+  color: rgb(129, 36, 36);
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form .btn:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+/* Chart Container */
+.chart-container {
+  width: 100%;
+  height: 250px;
 }

@@ -1,0 +1,105 @@
+/* src/components/Dashboard.css */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: #002855;
+  color: #188f32;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-bottom: 30px;
+  color: #00c4ff;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar ul li:hover {
+  color: #759852;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: #45b6b0;
+}
+
+/* Top bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Account Overview */
+.account-overview {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.balance-card {
+  background: #002855;
+  color: rgb(130, 31, 31);
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  margin-right: 20px;
+}
+
+.balance-card h4 {
+  margin-bottom: 10px;
+}
+
+.quick-actions button {
+  margin-right: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #00c4ff;
+  color: #9d3838;
+  font-weight: bold;
+}
+
+.quick-actions button:hover {
+  background: #008bb5;
+}
+
+/* Transactions */
+.transactions table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.transactions th,
+.transactions td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.transactions th {
+  background: #002855;
+  color: rgb(33, 11, 11);
+}
